@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digitron | Web Development - Design</title>
+    <meta
+      name="description"
+      content="An implementation of personal portfolio website"
+    />
+    <meta
+      name="keywords"
+      content="web develompment, web design, html, javascript, layout, css, slide out, digitron"
+    />
+    <meta name="Adis Ustovic" content="digitron" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function() {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+  </head>
+  <body class="loading">
+    <svg class="hidden">
+      <symbol id="icon-arrowlong" viewBox="0 0 32 11">
+        <title>arrow-long</title>
+        <path
+          d="M27.166.183a.619.619 0 0 0-.878 0 .619.619 0 0 0 0 .878l2.735 2.735H.768a.624.624 0 0 0 0 1.248h28.254L26.287 7.77a.619.619 0 0 0 0 .878.617.617 0 0 0 .441.183c.163 0 .32-.061.442-.183l3.796-3.796a.623.623 0 0 0-.005-.878L27.166.183z"
+        />
+      </symbol>
+    </svg>
+
+    <main>
+      <div class="sections_about">
+        <header class="sections__header2">
+          <h1 class="title2">digitron</h1>
+          <small class="ba text-muted">.ba</small>
+        </header>
+      </div>
+
+      <!-- SECTION ABOT ME -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 align-self-start mt-5 py-1">
+              <p class="section__description__left">
+                "Specialized in making custom brochure websites. Which are one
+                of the best and most effective solutions for business and
+                company services promotion. In order to stand out in today's
+                business world, YOU and your company have to be presented in a
+                modern, elegant and an eye catching way, with superb technical
+                execution. We provide that by using
+                <strong
+                  >HTML5, CSS3, Bootstrap, JavaScript, jQuery, PHP,
+                  Wordpress.</strong
+                >
+              </p>
+            </div>
+            <div class="col-md-7 align-self-center ml-auto">
+              <h1 class="big-title-about">
+                They wish, they see, they get in touch with you!
+                <a href="contact.html"
+                  ><span class="text-muted"> #get it now...</span></a
+                >
+              </h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-12 align-self-center">
+              <img
+                src="img/profile.jpg"
+                alt="profile-image"
+                class="img-fluid rounded-circle mb-4"
+              />
+              <h4 class="text-center">
+                ADIS UŠTOVIĆ <br /><small class="ml-auto"
+                  >Web Developer / Designer</small
+                >
+              </h4>
+            </div>
+            <!--<div class="col-md-3 col-sm-12 align-self-start mb-5">
+								<a class="btn btn-outline-dark" href="contact.html" role="button">CONTACT ME</a>
+							</div>-->
+            <div class="col-md-7 col-sm-12 align-self-center pt-3 mb-5">
+              <p class="section__description__right">
+                Main goal of every brochure website is to engage visitors in a
+                short time and immediately present who YOU are and what you
+                offer to them and how they can get that. Great UI/UX design
+                together with full details regarding your business must be
+                precisely presented to users and also have possibility for users
+                to make contact with you. A high-quality presentation, along
+                with reliability and speed at work, is more than half of the
+                work. "They wish, they see, they get in touch with you!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION BACK TO HOME PAGE -->
+      <!--<section class="section section--current">
+					<div class="section__more">
+						<div class="section__more-inner2 section__more-inner--bg1">
+							<span class="section__more-text">Back to the Home page</span>
+							<a href="index.html" class="section__more-link">
+								<span class="section__more-linktext">Home page</span>
+								<svg class="icon icon--arrowlong"><use xlink:href="#icon-arrowlong"></use></svg>
+							</a>
+						</div>
+					</div>	
+				</section>-->
+    </main>
+
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/charming.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal(".big-title-about", {
+        duration: 1500,
+        origin: "top",
+        distance: "100px"
+      });
+      sr.reveal(".section__description__left", {
+        duration: 2000,
+        origin: "left",
+        distance: "300px"
+      });
+      sr.reveal(".section__description__right", {
+        duration: 2000,
+        origin: "right",
+        distance: "300px"
+      });
+      sr.reveal(".btn", {
+        duration: 2000,
+        delay: 1000,
+        origin: "bottom"
+      });
+    </script>
+  </body>
+</html>

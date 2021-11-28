@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digitron | Web Development - Design</title>
+    <meta
+      name="description"
+      content="An implementation of personal portfolio website"
+    />
+    <meta
+      name="keywords"
+      content="web develompment, web design, html, javascript, layout, css, slide out"
+    />
+    <meta name="Adis Ustovic" content="digitron" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Hind"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function() {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+  </head>
+  <body class="loading">
+    <svg class="hidden">
+      <symbol id="icon-arrowlong" viewBox="0 0 32 11">
+        <title>arrow-long</title>
+        <path
+          d="M27.166.183a.619.619 0 0 0-.878 0 .619.619 0 0 0 0 .878l2.735 2.735H.768a.624.624 0 0 0 0 1.248h28.254L26.287 7.77a.619.619 0 0 0 0 .878.617.617 0 0 0 .441.183c.163 0 .32-.061.442-.183l3.796-3.796a.623.623 0 0 0-.005-.878L27.166.183z"
+        />
+      </symbol>
+    </svg>
+
+    <main>
+      <!--<div class="sections_contact">
+					<header class="sections__header2">
+						<h1 class="title2">digitron</h1><small class="ba text-muted">.ba</small>
+					</header>
+				</div>-->
+
+      <div class="container-fluid">
+        <header id="main-header">
+          <div class="row no-gutters">
+            <div class="col-lg-12 col-md-12">
+              <div class="d-flex flex-column">
+                <div class="p-5   text-white" id="cloud">
+                  <div
+                    class="name d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <h1 class="text-center heading">
+                      Choose your services below!
+                    </h1>
+                  </div>
+                </div>
+
+                <div>
+                  <div
+                    class="d-flex flex-row text-black align-items-stretch text-center"
+                  >
+                    <div
+                      class="port-item p-4"
+                      id="service1"
+                      data-toggle="collapse"
+                      data-target="#static"
+                    >
+                      <i class="fa fa-code fa-lg d-block"></i> Static Website
+                    </div>
+                    <div
+                      class="port-item p-4"
+                      id="service2"
+                      data-toggle="collapse"
+                      data-target="#dynamic"
+                    >
+                      <i class="fas fa-space-shuttle fa-lg d-block"></i> Dynamic
+                      Website
+                    </div>
+                    <div
+                      class="port-item p-4"
+                      id="service3"
+                      data-toggle="collapse"
+                      data-target="#psd"
+                    >
+                      <i class="fa fa-folder-open fa-lg d-block"></i> PSD to
+                      HTML - CSS layout
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- STATIC -->
+        <div id="static" class="collapse show">
+          <div class="card card-body text-black py-5">
+            <h2>What is Static Web page?</h2>
+            <div class="row">
+              <div class="constainer">
+                <div class="col-md-9 py-3">
+                  <p class="section__description-inner px-2">
+                    <img
+                      src="img/code.png"
+                      alt="code-tag"
+                      style="width:90px;height:90px;"
+                    />
+                    In simplest terms, static Web pages are those with content
+                    that cannot change without a developer editing its source
+                    code, while dynamic Web pages can display different content
+                    from the same source code. When it comes to using static or
+                    dynamic pages for parts of your company's website, having
+                    the most advanced code on each of your pages is not
+                    important. What is important is the purpose each page serves
+                    for your website.
+                  </p>
+                </div>
+
+                <div class="col-md-9 text-center">
+                  <img
+                    src="img/html.png"
+                    alt="html"
+                    style="width:110px;height:110px;"
+                  />
+                  <img
+                    src="img/css.png"
+                    alt="css"
+                    style="width:110px;height:110px;"
+                  />
+                  <img
+                    src="img/bootstrap.png"
+                    alt="css"
+                    style="width:110px;height:110px;"
+                  />
+                  <img
+                    src="img/javascript.png"
+                    alt="javascript"
+                    style="width:150px;height:150px;"
+                  />
+                </div>
+
+                <div class="col-md-9 py-3">
+                  <p class="section__description-inner px-2">
+                    Static Web pages display the exact same information whenever
+                    anyone visits it. Static Web pages do not have to be simple
+                    plain text. They can feature detailed multimedia design and
+                    even videos. However, every visitor to that page will be
+                    greeted by the exact same text, multimedia design or video
+                    every time he visits the page until you alter that page's
+                    source code.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DYNAMIC -->
+        <div id="dynamic" class="collapse">
+          <div class="card card-body text-black py-5">
+            <h2>What is Dynamic Webpage?</h2>
+            <div class="row">
+              <div class="col-md-9 py-3">
+                <p class="section__description-inner px-2">
+                  <img
+                    src="img/wordpress.png"
+                    alt="wordpress"
+                    style="width:90px;height:90px;"
+                  />
+                  Dynamic Web pages are capable of producing different content
+                  for different visitors from the same source code file. The
+                  website can display different content based on what operating
+                  system or browser the visitor is using, whether she is using a
+                  PC or a mobile device, or even the source that referred the
+                  visitor. A dynamic Web page is not necessarily better than a
+                  static Web page. The two simply serve different purposes.
+                </p>
+              </div>
+
+              <div class="col-md-9 text-center">
+                <img
+                  src="img/htmlcss.png"
+                  alt="htmlcss"
+                  style="width:110px;height:110px;"
+                />
+                <img
+                  src="img/php.png"
+                  alt="php"
+                  style="width:190px;height:110px;"
+                />
+                <img
+                  src="img/wordpress.png"
+                  alt="wordpress"
+                  style="width:110px;height:110px;"
+                />
+              </div>
+
+              <div class="col-md-9 py-3">
+                <h2>Static vs Dynamic Creation</h2>
+                <p class="section__description-inner px-2">
+                  Developers generally create static pages with HTML, but use
+                  languages like PHP, Javascript, or Actionscript to create
+                  dynamic pages. They can also use frameworks like Ruby on
+                  Rails, Django, or Flex for dynamic pages. Dynamic languages
+                  and frameworks also have the technical capacity to create
+                  static Web page content. However, doing so creates source code
+                  that is unnecessarily complex for its purpose while being more
+                  difficult to maintain.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PSD -->
+        <div id="psd" class="collapse">
+          <div class="card card-body text-black py-5">
+            <h2>What is PSD to HTML - CSS layout</h2>
+            <div class="row">
+              <div class="col-md-9 py-3">
+                <p class="section__description-inner px-2">
+                  <img
+                    src="img/psd.png"
+                    alt="psd"
+                    style="width:100px;height:100px;"
+                  />Conversion requests a lot of patience, above all, passion
+                  and love for details. For this reason, many automated tools
+                  can never replace the developer in the process of creating a
+                  clean code for your future site. Every detail must be where it
+                  belongs. Except great look, equally important is to organize
+                  HTML5 and CSS3 code to look perfectly and legibly.
+                </p>
+
+                <div class="col-md-9 text-center py-3">
+                  <img
+                    src="img/ai.png"
+                    alt="ai"
+                    style="width:110px;height:110px;"
+                  />
+                  <img
+                    src="img/id.png"
+                    alt="id"
+                    style="width:110px;height:110px;"
+                  />
+                  <img
+                    src="img/diamond.png"
+                    alt="diamond"
+                    style="width:110px;height:110px;"
+                  />
+                </div>
+
+                <p class="section__description-inner px-2">
+                  Your site, converted from PSD to HTML5, is tasted on all
+                  devices in order to matches your original design. When we
+                  complete the whole process and we are satisfied with the done,
+                  then we will send it to you to make you happy also :)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION BACK TO HOME PAGE -->
+      <!--<section class="section section--current">
+					<div class="section__more">
+						<div class="section__more-inner2 section__more-inner--bg1">
+							<span class="section__more-text">Back to the Home page</span>
+							<a href="index.html" class="section__more-link">
+								<span class="section__more-linktext">Home page</span>
+								<svg class="icon icon--arrowlong"><use xlink:href="#icon-arrowlong"></use></svg>
+							</a>
+						</div>
+					</div>	
+				</section>-->
+    </main>
+
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/charming.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+      $(".port-item").click(function() {
+        $(".collapse").collapse("hide");
+      });
+    </script>
+  </body>
+</html>
